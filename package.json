@@ -15,7 +15,7 @@
     "start-dev": "nodemon build/app.js"
   },
   "dependencies": {
-    "xpresser": "^0.2.73"
+    "xpresser": "^0.2.74"
   },
   "devDependencies": {
     "@types/node": "^14.11.7",
