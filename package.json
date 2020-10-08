@@ -11,7 +11,7 @@
     "build": "xjs tsc build",
     "tsc-watch": "tsc --watch",
     "dev": "ts-node-dev --respawn --transpile-only app.ts",
-    "start": "node build/app.js",
+    "start": "yarn run build && node build/app.js",
     "start-dev": "nodemon build/app.js"
   },
   "dependencies": {
