@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<%- include('head') %>
+<body>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-8-tablet is-offset-2-tablet is-6-widescreen is-offset-3-widescreen">
+                <div class="has-text-centered">
+                    <img src="<%= ctx.url('xjs-logo-white.png') %>" style="height: 180px; margin-bottom: 15px">
+                </div>
+
+                <div class="box">
+                    <h1 class="title">
+                        About Page
+
+                        <a href="https://www.npmjs.com/package/ejs" target="_blank">
+                            <span class="is-pulled-right tag is-dark">Using Ejs</span>
+                        </a>
+                    </h1>
+                    <hr>
+
+                    <p class="subtitle">
+                        Your awesome project is using <a target="_blank" href="https://www.npmjs.com/package/xpresser"><strong
+                                    class="has-text-danger">X</strong><strong>presser</strong></a> & <strong
+                                class="has-text-primary">Bulma</strong>!
+                    </p>
+
+                    <ul>
+                        <% for(key in info) { %>
+                            <li>
+                                <strong class="is-uppercase has-text-grey"><%= key %>:</strong> <span
+                                        class="ml-3"><%= info[key] %></span>
+                            </li>
+                        <% } %>
+                    </ul>
+
+
+                    <div class="mvh-10 has-text-centered">
+                        <a href="<%= ctx.route('index') %>" class="button is-primary is-hovered">
+                            Back to Home
+                        </a>
+                    </div>
+                </div>
+
+                <%- include('../footer') %>
+            </div>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>

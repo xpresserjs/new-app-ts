@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<%- include('head') %>
+<body>
+<section class="section mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <div class="text-center">
+                    <img src="<%= ctx.url('xjs-logo-white.png') %>" style="height: 180px; margin-bottom: 15px">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="clearfix">
+                            <div class="float-left">
+                                <h2>
+                                    About Page
+                                </h2>
+                            </div>
+                            <div class="float-right">
+                                <a href="https://www.npmjs.com/package/ejs" target="_blank">
+                                    <span class="badge badge-dark float-right">Using Ejs</span>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <p class="mt-2 lead">
+                            Your awesome project is using <a target="_blank" href="https://www.npmjs.com/package/xpresser"><strong
+                                        class="text-danger">X</strong><strong class="text-dark">presser</strong></a> &
+                            <strong
+                                    class="text-primary">Bootstrap</strong>!
+                        </p>
+
+                        <ul>
+                            <% for(key in info) { %>
+                                <li>
+                                    <strong class="text-uppercase has-muted"><%= key %>:</strong> <span
+                                            class="ml-3"><%= info[key] %></span>
+                                </li>
+                            <% } %>
+                        </ul>
+
+
+                        <div class="mt-5 text-center">
+                            <a href="<%= ctx.route('index') %>" class="btn btn-success">
+                                Back to Home
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <%- include('../footer') %>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
