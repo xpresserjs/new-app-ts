@@ -3587,10 +3587,10 @@ xjs-cli@^0.1.28:
     object-collection "^1.0.29"
     shelljs "^0.8.4"
 
-xpresser@^0.2.76:
-  version "0.2.76"
-  resolved "https://registry.yarnpkg.com/xpresser/-/xpresser-0.2.76.tgz#42f9eda7dd87fa6ccd64c2bac4eb7c1b4dad39d4"
-  integrity sha512-DOHoWhgDw6kxqF4Vr9VnqouiF6SHxyISLHFwN1tTSt9SK7rEr9cQ9PcialgL+BjRVXmBBXrD90OJeWZJymuI7Q==
+xpresser@^0.2.78:
+  version "0.2.78"
+  resolved "https://registry.yarnpkg.com/xpresser/-/xpresser-0.2.78.tgz#3acd3f42e6b136472c9afa1342f9ad31fbd5c58f"
+  integrity sha512-oGre4gi3cyJxuuXp/zoJsloDoLQAO15pCDj+WvL5fDKoEVwvB983Yr5owlMNsUgTiUsG4SEoofCKtc7CaSKjMA==
   dependencies:
     "@types/express" "^4.17.7"
     "@types/node" "^14.11.2"
