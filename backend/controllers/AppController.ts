@@ -94,7 +94,7 @@ class AppController extends $.controller {
      * @param user  - Imported form boot method
      * @param template - Imported form boot method
      */
-    index(http: Http, {user, theme}: any) {
+    index(http: Http, {user, theme}: any): Http.Response {
         // Return index view in views folder
         return http.view(theme + '/index', {
             user,
