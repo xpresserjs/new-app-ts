@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "xjs tsc build",
+    "build": "xjs @stack tsc",
     "tsc-watch": "tsc --watch",
     "dev": "ts-node-dev --respawn --transpile-only app.ts",
     "start": "yarn run build && node build/app.js",

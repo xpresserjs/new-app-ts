@@ -14,11 +14,13 @@
     "start_console": "node"
   },
   "jobs_path": "backend/jobs",
-  "tsc": [
-    "rm -rf build",
-    "tsc -p tsconfig.json",
-    "cp -r ./public ./build/public",
-    "cp -r ./backend/views ./build/backend/views"
-  ]
+  "stacks": {
+    "tsc": [
+      "rm -rf build",
+      "tsc -p tsconfig.json",
+      "cp -r ./public ./build/public",
+      "cp -r ./backend/views ./build/backend/views"
+    ]
+  }
 }
 
