@@ -1,5 +1,5 @@
-import xpresser from "xpresser";
-import config from "./config"
+import xpresser = require("xpresser");
+import config = require("./config");
 
 // Start Xpresser
 const $ = xpresser(config);

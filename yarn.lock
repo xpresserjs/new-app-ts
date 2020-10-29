@@ -53,20 +53,25 @@
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.161.tgz#a21ca0777dabc6e4f44f3d07f37b765f54188b18"
   integrity sha512-EP6O3Jkr7bXvZZSZYlsgt5DIjiGr0dXP1/jVEwVLTFgg0d+3lWVQkRavYVQszV7dYUwvg0B8R0MBDpcmXg7XIA==
 
+"@types/lodash@^4.14.162":
+  version "4.14.163"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.163.tgz#6026f73c8267a0b7d41c7c8aadacfa2a5255774f"
+  integrity sha512-BeZM/FZaV53emqyHxn9L39Oz6XbHMBRLA1b1quROku48J/1kYYxPmVOJ/qSQheb81on4BI7H6QDo6bkUuRaDNQ==
+
 "@types/mime@*":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.3.tgz#c893b73721db73699943bfc3653b1deb7faa4a3a"
   integrity sha512-Jus9s4CDbqwocc5pOAnh8ShfrnMcPHuJYzVcSUU7lrh8Ni5HuIqX3oilL86p3dlTrk0LzHRCgA/GQ7uNCw6l2Q==
 
-"@types/node@*", "@types/node@^14.11.2":
+"@types/node@*":
   version "14.11.5"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.5.tgz#fecad41c041cae7f2404ad4b2d0742fdb628b305"
   integrity sha512-jVFzDV6NTbrLMxm4xDSIW/gKnk8rQLF9wAzLWIOg+5nU6ACrIMndeBdXci0FGtqJbP9tQvm6V39eshc96TO2wQ==
 
-"@types/node@^14.14.2":
-  version "14.14.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.2.tgz#d25295f9e4ca5989a2c610754dc02a9721235eeb"
-  integrity sha512-jeYJU2kl7hL9U5xuI/BhKPZ4vqGM/OmK6whiFAXVhlstzZhVamWhDSmHyGLIp+RVyuF9/d0dqr2P85aFj4BvJg==
+"@types/node@^14.14.5", "@types/node@^14.14.6":
+  version "14.14.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.6.tgz#146d3da57b3c636cc0d1769396ce1cfa8991147f"
+  integrity sha512-6QlRuqsQ/Ox/aJEQWBEJG7A9+u7oSYl3mem/K8IzxXG/kAGbV1YPD9Bg9Zw3vyxC/YP+zONKwy8hGkSt1jxFMw==
 
 "@types/qs@*":
   version "6.9.5"
@@ -96,10 +101,10 @@
   resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
   integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
 
-"@xpresser/router@^1.0.12":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@xpresser/router/-/router-1.0.12.tgz#ad3707c4771386ab07c0460d9d1b92595ec93958"
-  integrity sha512-07N5jYNzmf2IJxCqwEyzwjrRk1ws7kusfsrfNObNBdIfD9XXpWlvy/pEPlXlKVGuTOwxaZGzUqwaqqzf4TV/Bw==
+"@xpresser/router@^1.0.13":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@xpresser/router/-/router-1.0.13.tgz#f09f63b036edcbc42aa696a1d07b12e562bd3460"
+  integrity sha512-taX1sJyI2VLFCaewmVE5NiG7crZIAD0kkjgMGH0mHxh+rs2IAiB9P6PCrpGsdOV6das5KUUScVS6BSI5JXIR6Q==
   dependencies:
     lodash.clone "^4.5.0"
     lodash.snakecase "^4.1.1"
@@ -1872,7 +1877,7 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-knex@^0.21.5, knex@^0.21.6:
+knex@^0.21.5:
   version "0.21.6"
   resolved "https://registry.yarnpkg.com/knex/-/knex-0.21.6.tgz#3e80ae38199c41e2dfe7d1d1a38470b1de1c93e7"
   integrity sha512-gFB2q4MamYCEqzCPNgK7DMcyyAxoHhhSDnPsNDJo50Gor5ibI2n5bNRW768IG5S06k6nE3Gik5/kcoTmbsYbZw==
@@ -1889,6 +1894,25 @@ knex@^0.21.5, knex@^0.21.6:
     mkdirp "^1.0.4"
     pg-connection-string "2.3.0"
     tarn "^3.0.0"
+    tildify "2.0.0"
+    uuid "^7.0.3"
+    v8flags "^3.2.0"
+
+knex@^0.21.8:
+  version "0.21.8"
+  resolved "https://registry.yarnpkg.com/knex/-/knex-0.21.8.tgz#e5c07af61ee6aa006d3468e10e3a69351deb0c26"
+  integrity sha512-ziUu4vAlIGA8j2l0S4xcD1d3XdpJA4HYGhwHEhgAgefGCmB1OLSjUGCs/ebkJal42fSvAkyZaB0tcOtTXKgS5g==
+  dependencies:
+    colorette "1.2.1"
+    commander "^5.1.0"
+    debug "4.1.1"
+    esm "^3.2.25"
+    getopts "2.2.5"
+    interpret "^2.2.0"
+    liftoff "3.1.0"
+    lodash "^4.17.20"
+    pg-connection-string "2.3.0"
+    tarn "^3.0.1"
     tildify "2.0.0"
     uuid "^7.0.3"
     v8flags "^3.2.0"
@@ -2125,7 +2149,7 @@ moment-timezone@^0.5.x:
   dependencies:
     moment ">= 2.9.0"
 
-"moment@>= 2.9.0", moment@^2.29.0:
+"moment@>= 2.9.0", moment@^2.29.1:
   version "2.29.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
   integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
@@ -2335,6 +2359,14 @@ object-collection@^1.0.29:
   integrity sha512-6JX4HF0LM6h+YasW1JUrYkECvPLHqxyLfi8qZjl5mV+6huIKjt2REo6dd+srUq/09nPsA+Meu+94rmf8oJK+QQ==
   dependencies:
     "@types/lodash" "^4.14.161"
+    lodash "^4.17.20"
+
+object-collection@^1.0.30:
+  version "1.0.30"
+  resolved "https://registry.yarnpkg.com/object-collection/-/object-collection-1.0.30.tgz#aceacb4c3026501099c266fb6989b27dd3b78e85"
+  integrity sha512-JPrsxmk7I6L0DnETvcN8jeXbQF3aGVaFVUwRoJphO5mwhdyOolsEIDy00I4zgR9+gS+KVb2l4pgFeAPobbvyWA==
+  dependencies:
+    "@types/lodash" "^4.14.162"
     lodash "^4.17.20"
 
 object-copy@^0.1.0:
@@ -3204,6 +3236,11 @@ tarn@^3.0.0:
   resolved "https://registry.yarnpkg.com/tarn/-/tarn-3.0.0.tgz#a4082405216c0cce182b8b4cb2639c52c1e870d4"
   integrity sha512-PKUnlDFODZueoA8owLehl8vLcgtA8u4dRuVbZc92tspDYZixjJL6TqYOmryf/PfP/EBX+2rgNcrj96NO+RPkdQ==
 
+tarn@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/tarn/-/tarn-3.0.1.tgz#ebac2c6dbc6977d34d4526e0a7814200386a8aec"
+  integrity sha512-6usSlV9KyHsspvwu2duKH+FMUhqJnAh6J5J/4MITl8s94iSUQTLkJggdiewKv4RyARQccnigV48Z+khiuVZDJw==
+
 term-size@^2.1.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/term-size/-/term-size-2.2.0.tgz#1f16adedfe9bdc18800e1776821734086fcc6753"
@@ -3373,10 +3410,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.3.tgz#153bbd468ef07725c1df9c77e8b453f8d36abba5"
-  integrity sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
+typescript@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.5.tgz#ae9dddfd1069f1cb5beb3ef3b2170dd7c1332389"
+  integrity sha512-ywmr/VrTVCmNTJ6iV2LwIrfG1P+lv6luD8sUJs+2eI9NLGigaN+nUQc13iHqisq7bra9lnmUSYqbJvegraBOPQ==
 
 uglify-js@^3.1.4:
   version "3.11.1"
@@ -3575,10 +3612,10 @@ xdg-basedir@^4.0.0:
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-4.0.0.tgz#4bc8d9984403696225ef83a1573cbbcb4e79db13"
   integrity sha512-PSNhEJDejZYV7h50BohL09Er9VaIefr2LMAf3OEmpCkjOi34eYyQYAXUTjEQtZJTKcF0E2UKTh+osDLsgNim9Q==
 
-xjs-cli@^0.1.34:
-  version "0.1.34"
-  resolved "https://registry.yarnpkg.com/xjs-cli/-/xjs-cli-0.1.34.tgz#106cf31ad77550573820e4240dff3f2ce160f95d"
-  integrity sha512-y0XZa7wnrtVzphd1+Ly+OkGmNG8g/LWqaVGguOscLlDt9Iqna8nY6VFsz4GshViziBhdTZF8BiOrdETefMw/zQ==
+xjs-cli@^0.1.40:
+  version "0.1.40"
+  resolved "https://registry.yarnpkg.com/xjs-cli/-/xjs-cli-0.1.40.tgz#2fc361fc80699c5422722955425bc51ebc203060"
+  integrity sha512-dGmtAXowhqXMUIdfh9IyDkoIeTUKF9yTmY2fAVc7CMLlQVfj7Ye2zgiaqFYtcfah3+fOWMXvZenb9JlHGHuUTA==
   dependencies:
     chalk "^4.1.0"
     commander "^6.1.0"
@@ -3587,14 +3624,14 @@ xjs-cli@^0.1.34:
     object-collection "^1.0.29"
     shelljs "^0.8.4"
 
-xpresser@^0.2.82:
-  version "0.2.82"
-  resolved "https://registry.yarnpkg.com/xpresser/-/xpresser-0.2.82.tgz#22e6afb5949496b92daaaaad1a76196aeb6c76bf"
-  integrity sha512-vgjB/aBU0ULf39P8WaKIflP8khANGDYRcuTHvNppdFa81eQCSD3i2o5RcEP1o09wl4epaRwp2AdKoXg0ehDcRA==
+xpresser@^0.2.95:
+  version "0.2.95"
+  resolved "https://registry.yarnpkg.com/xpresser/-/xpresser-0.2.95.tgz#98d2534379739d43104d767806cb797251229279"
+  integrity sha512-wSVdtUBF+c7Hkypb4biS12oIpNc+HfPQZQXF8nOxK0QrC/68QQYlSREk3nkU54UnZ2BNg0ScaN6mtpGZWGZfHQ==
   dependencies:
     "@types/express" "^4.17.7"
-    "@types/node" "^14.11.2"
-    "@xpresser/router" "^1.0.12"
+    "@types/node" "^14.14.5"
+    "@xpresser/router" "^1.0.13"
     body-parser "^1.19.0"
     build-url "^6.0.1"
     chalk "^4.1.0"
@@ -3607,9 +3644,9 @@ xpresser@^0.2.82:
     fs-extra "^9.0.1"
     handlebars "^4.7.6"
     helmet "^4.1.1"
-    knex "^0.21.6"
-    moment "^2.29.0"
-    object-collection "^1.0.29"
+    knex "^0.21.8"
+    moment "^2.29.1"
+    object-collection "^1.0.30"
     pluralize "^8.0.0"
     shelljs "^0.8.4"
     sqlite3 "^5.0.0"
