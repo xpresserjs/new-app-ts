@@ -9,7 +9,7 @@ export = {
     /**
      * Set Name of Application.
      */
-    name: "Xjs App",
+    name: "Xpresser App",
 
     /**
      * Project Settings.
