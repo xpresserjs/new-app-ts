@@ -1,3 +1,4 @@
+import { InXpresserError } from "xpresser";
 import {DollarSign} from "xpresser/types";
 import {Http} from "xpresser/types/http";
 
@@ -42,35 +43,36 @@ class AppController extends $.controller {
          * we have to save the theme in session in case switch is used.
          * Only required for the switch theme button function.
          *
-         * $.$config is an instance of xpresser/src/helpers/ObjectCollection
+         * $.config is an instance of xpresser/src/helpers/ObjectCollection
          * Helps you get config variables or set default if they don't
          * exist to avoid errors.
          */
-        let theme: string = <any>http.query("theme", null);
+        let theme: string = http.query("theme", null);
 
-        // Check if theme is bulma/bootstrap
-        if (["bulma", "bootstrap"].includes(theme)) {
+        // If session is enabled Check if theme is bulma/bootstrap
+        if (http.session) {
+            if (["bulma", "bootstrap"].includes(theme)) {
 
-            // Set Theme to session
-            http.session.theme = theme;
-
-        } else {
-            // if no query and session exists set theme to session value
-            if (http.session.theme) {
-
-                theme = http.session.theme
+                // Set Theme to session
+                http.session.theme = theme;
 
             } else {
-                // Get Config {project.theme} else return null
-                theme = $.config.get('project.theme', null);
+                // if no query and session exists set theme to session value
+                if (http.session.theme) {
 
-                // If null we need a config.. we throw error.
-                if (theme === null) {
-                    throw new Error("{project.theme} config is required! Use bulma/bootstrap")
+                    theme = http.session.theme
+
+                } else {
+                    // Get Config {project.theme} else return null
+                    theme = $.config.get('project.theme', null);
+
+                    // If null we need a config.. we throw error.
+                    if (theme === null) {
+                        throw new InXpresserError("{project.theme} config is required! Use bulma/bootstrap")
+                    }
                 }
             }
         }
-
 
         /**
          * Return Values we want other methods to get on every request.
