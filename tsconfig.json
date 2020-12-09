@@ -80,7 +80,7 @@
       // Include Session Plugin Types
       "@xpresser/session/xpresser",
       // Include Project Xpresser Types
-      "./backend/xpresser"
+      "./backend/types"
     ]
   }
 }
