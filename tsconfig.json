@@ -77,8 +77,6 @@
     "forceConsistentCasingInFileNames": true,
     /* Disallow inconsistently-cased references to the same file. */
     "types": [
-      // Include Session Plugin Types
-      "@xpresser/session/xpresser",
       // Include Project Xpresser Types
       "./backend/types"
     ]

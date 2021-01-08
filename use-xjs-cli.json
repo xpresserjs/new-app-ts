@@ -19,8 +19,7 @@
     "tsc": [
       "rm -rf build",
       "tsc -p tsconfig.json",
-      "cp -r ./public ./build/public",
-      "cp -r ./backend/views ./build/backend/views"
+      "cp -r ./public ./build/public"
     ]
   }
 }

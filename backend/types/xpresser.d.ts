@@ -17,6 +17,7 @@ declare module "xpresser/types" {
     }
 }*/
 
+import "@xpresser/session/xpresser";
 import "@xpresser/session/custom-types";
 
 /**

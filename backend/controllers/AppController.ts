@@ -46,7 +46,7 @@ class AppController extends ControllerClass {
          * Helps you get config variables or set default if they don't
          * exist to avoid errors.
          */
-        let theme: string = http.query("theme", null);
+        let theme: string = http.query("theme");
 
         // If session is enabled Check if theme is bulma/bootstrap
         if (http.session) {
@@ -63,10 +63,10 @@ class AppController extends ControllerClass {
 
                 } else {
                     // Get Config {project.theme} else return null
-                    theme = $.config.get('project.theme', null);
+                    theme = $.config.get('project.theme');
 
                     // If null we need a config.. we throw error.
-                    if (theme === null) {
+                    if (!theme) {
                         throw new InXpresserError("{project.theme} config is required! Use bulma/bootstrap")
                     }
                 }

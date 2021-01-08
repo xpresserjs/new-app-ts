@@ -55,6 +55,7 @@ export = {
      */
     server: {
         domain: 'localhost',
+
         // Server Port
         port: 3000,
 
