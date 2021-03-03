@@ -59,9 +59,6 @@ export = {
         // Server Port
         port: 3000,
 
-        // Base Url,
-        baseUrl: '/',
-
         /**
          * By default port is excluded if its [80, 443]
          * You can also decide to exclude port in url
