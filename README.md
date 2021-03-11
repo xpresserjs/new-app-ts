@@ -25,7 +25,7 @@ Theme can be changed in [`config.ts`](./config.ts)
 {
   "build": "xjs @stack tsc",
   "ts-watch": "tsc --watch",
-  "ts-dev": "ts-node-dev --respawn --transpile-only app.ts",
+  "ts-dev": "ts-node-dev --respawn app.ts",
   "start": "npm run build && node build/app.js",
   "start-dev": "nodemon build/app.js"
 }
@@ -33,12 +33,12 @@ Theme can be changed in [`config.ts`](./config.ts)
 
 - **build**: Build Typescript files
 - **ts-watch**: Compile typescript in realtime while watching or changes.
-- **ts-dev**: Start app in typescript mode.
+- **ts-dev**: Start app in typescript mode using `ts-node-dev`.
 - **start**: Builds file and runs built file.
-- **js-dev**: Uses `nodemon` to run the built file. This is useful when using tsc watch.
+- **js-dev**: Use `nodemon` to run built file. This is useful when using tsc watch.
 
 
 
 #### What next?
-Please, Star Project :)
+Please, Star Project
 Thank you so much.
