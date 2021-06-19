@@ -1,7 +1,7 @@
-import { InXpresserError, ControllerClass, getInstance } from "xpresser";
+import {ControllerClass, getInstance} from "xpresser";
 import {Http} from "xpresser/types/http";
 
- const $ = getInstance();
+const $ = getInstance();
 
 /**
  * AppController
