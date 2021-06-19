@@ -54,7 +54,7 @@ export = {
      * By default xjs sets this for you.
      */
     server: {
-        domain: 'localhost',
+        baseUrl: '/',
 
         // Server Port
         port: 3000,

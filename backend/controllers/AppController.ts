@@ -25,7 +25,6 @@ class AppController extends ControllerClass {
     static boot(http: Http): any {
         /**
          * Set a user variable that will be passed to all methods
-         *
          * This should maybe come from a database.
          */
         const user = {
@@ -34,54 +33,10 @@ class AppController extends ControllerClass {
         };
 
         /**
-         * Set Theme config in boot.
-         * We dont want to keep retyping it in all methods
-         *
-         *
-         * if we have ?theme=name in url query we would use that else use project config.
-         * we have to save the theme in session in case switch is used.
-         * Only required for the switch theme button function.
-         *
-         * $.config is an instance of xpresser/src/helpers/ObjectCollection
-         * Helps you get config variables or set default if they don't
-         * exist to avoid errors.
-         */
-        let theme: string = http.query("theme");
-
-        // If session is enabled Check if theme is bulma/bootstrap
-        if (http.session) {
-            if (["bulma", "bootstrap"].includes(theme)) {
-
-                // Set Theme to session
-                http.session.theme = theme;
-
-            } else {
-                // if no query and session exists set theme to session value
-                if (http.session.theme) {
-
-                    theme = http.session.theme
-
-                } else {
-                    // Get Config {project.theme} else return null
-                    theme = $.config.get('project.theme');
-
-                    // If null we need a config.. we throw error.
-                    if (!theme) {
-                        throw new InXpresserError("{project.theme} config is required! Use bulma/bootstrap")
-                    }
-                }
-            }
-        }
-
-        /**
          * Return Values we want other methods to get on every request.
-         *
          * Imagine writing this in every method because we need them? :)
          */
-        return {
-            user,
-            theme,
-        }
+        return {user}
     }
 
 
@@ -95,12 +50,10 @@ class AppController extends ControllerClass {
      * @param user  - Imported form boot method
      * @param template - Imported form boot method
      */
-    index(http: Http, {user, theme}: any): Http.Response {
+    index(http: Http, {user}: any): Http.Response {
         // Return index view in views folder
-        return http.view(theme + '/index', {
+        return http.view('index', {
             user,
-            // for footer.ejs
-            theme,
         })
     }
 
@@ -114,7 +67,7 @@ class AppController extends ControllerClass {
      * @param user - Imported from boot method
      * @param theme - Imported from boot method
      */
-    static about(http: Http, {user, theme}: any): Http.Response {
+    static about(http: Http, {user}: any): Http.Response {
         /**
          * Set contact details
          *
@@ -128,11 +81,9 @@ class AppController extends ControllerClass {
         };
 
 
-        return http.view(theme + '/about', {
+        return http.view('about', {
             user,
             info,
-            // Required by footer.ejs
-            theme,
         });
     }
 

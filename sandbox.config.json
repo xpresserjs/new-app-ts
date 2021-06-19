@@ -1,0 +1,4 @@
+{
+  "startScript": "ts-dev",
+  "node": "14"
+}
