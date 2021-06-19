@@ -1,4 +1,7 @@
 {
-  "startScript": "ts-dev",
-  "node": "14"
+  "template": "node",
+  "container": {
+    "startScript": "ts-dev",
+    "node": "14"
+  }
 }
