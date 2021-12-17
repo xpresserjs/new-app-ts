@@ -1,5 +1,6 @@
 {
   "template": "node",
+  "node": "14",
   "container": {
     "startScript": "ts-dev",
     "node": "14"
