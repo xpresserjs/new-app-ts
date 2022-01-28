@@ -127,4 +127,4 @@ build
 *.sqlite
 storage/framework
 yarn.lock
-
+package-lock.json
