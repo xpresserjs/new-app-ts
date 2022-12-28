@@ -18,9 +18,8 @@
   "stacks": {
     "tsc": [
       "rm -rf build",
-      "tsc -p tsconfig.json",
+      "npx tsc --build --clean",
       "cp -r ./public ./build/public"
     ]
   }
 }
-
