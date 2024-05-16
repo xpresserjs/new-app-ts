@@ -20,7 +20,7 @@ export = {
 
 
     /**
-     * Path settings..
+     * Path settings.
      */
     paths: {
 
@@ -51,16 +51,15 @@ export = {
     },
 
     /**
-     * By default xjs sets this for you.
+     * By default, xjs sets this for you.
      */
     server: {
-        baseUrl: '/',
 
         // Server Port
         port: 3000,
 
         /**
-         * By default port is excluded if its [80, 443]
+         * By default, port is excluded if its [80, 443]
          * You can also decide to exclude port in url
          * by setting this to false
          */

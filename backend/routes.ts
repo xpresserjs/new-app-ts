@@ -7,7 +7,7 @@ const route = getInstanceRouter();
 
 /**
  * Name in routes is not compulsory.
- * if action of controller name is === to route name
+ * if the action of controller name is === to route name,
  * You can use the .actionAsName() function,
  * As seen in about route.
  */
